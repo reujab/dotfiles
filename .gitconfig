@@ -1,0 +1,14 @@
+[user]
+	email = reujab@gmail.com
+	name = reujab
+[credential]
+	helper = cache --timeout=3600
+[advice]
+	statusHints = false
+	pushNonFastForward = false
+	commitBeforeMerge = false
+	resolveConflict = false
+	implicitIdentity = false
+	detachedHead = false
+[push]
+	default = simple
