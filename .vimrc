@@ -6,6 +6,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'garbas/vim-snipmate'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -51,6 +52,7 @@ let ycm_autoclose_preview_window_after_insertion = 1
 nmap - gT
 nmap <c-l> :mode<cr>
 nmap <cr> <plug>NERDCommenterToggle
+nmap <leader> <plug>(easymotion-prefix)
 nmap <space> :w<cr>
 nmap = gt
 nmap U :redo<cr>
