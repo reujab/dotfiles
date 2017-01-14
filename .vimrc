@@ -7,6 +7,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'fatih/vim-go'
 Plugin 'garbas/vim-snipmate'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -27,6 +28,8 @@ colorscheme onedark
 command! NT call NewTerm()
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+
+let go_fmt_autosave = 0
 
 let lightline = {}
 let lightline.colorscheme = 'onedark'
