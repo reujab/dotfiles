@@ -3,9 +3,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'ervandew/supertab'
 Plugin 'garbas/vim-snipmate'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -45,6 +45,8 @@ let syntastic_check_on_wq = 0
 let syntastic_error_symbol = '✗'
 let syntastic_javascript_checkers = ['eslint']
 let syntastic_warning_symbol = '✗'
+
+let ycm_autoclose_preview_window_after_insertion = 1
 
 nmap - gT
 nmap <c-l> :mode<cr>
