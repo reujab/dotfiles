@@ -3,10 +3,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'Shougo/neco-vim'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'carlitux/deoplete-ternjs'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'ervandew/supertab'
 Plugin 'fatih/vim-go'
 Plugin 'garbas/vim-snipmate'
 Plugin 'itchyny/lightline.vim'
@@ -18,16 +21,21 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'zchee/deoplete-go'
 
 call vundle#end()
 
 autocmd ColorScheme * highlight ExtraWhitespace guibg=#e06c75
+autocmd InsertLeave * pclose!
 
 colorscheme onedark
 
 command! NT call NewTerm()
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+
+let deoplete#enable_at_startup = 1
+let deoplete#auto_complete_delay = 0
 
 let go_fmt_autosave = 0
 
@@ -44,13 +52,13 @@ let lightline.subseparator.right = ''
 
 let NERDSpaceDelims = 1
 
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 let syntastic_check_on_open = 1
 let syntastic_check_on_wq = 0
 let syntastic_error_symbol = '✗'
 let syntastic_javascript_checkers = ['eslint']
 let syntastic_warning_symbol = '✗'
-
-let ycm_autoclose_preview_window_after_insertion = 1
 
 nmap - gT
 nmap <c-l> :mode<cr>
