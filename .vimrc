@@ -3,10 +3,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'Shougo/neco-vim'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'carlitux/deoplete-ternjs'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ervandew/supertab'
@@ -21,7 +18,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'zchee/deoplete-go'
 
 call vundle#end()
 
@@ -33,9 +29,6 @@ colorscheme onedark
 command! NT call NewTerm()
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
-let deoplete#enable_at_startup = 1
-let deoplete#auto_complete_delay = 0
 
 let go_fmt_autosave = 0
 
