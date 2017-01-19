@@ -35,7 +35,7 @@ let ale_lint_on_save = 1
 let ale_lint_on_text_changed = 0
 let ale_sign_error = '✗'
 
-let go_fmt_autosave = 0
+let go_fmt_command = "goimports"
 let go_template_autocreate = 0
 
 let lightline = {}
