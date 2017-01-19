@@ -51,8 +51,6 @@ let lightline.subseparator.right = ''
 
 let NERDSpaceDelims = 1
 
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
 nmap - gT
 nmap <c-l> :mode<cr>
 nmap <cr> <plug>NERDCommenterToggle
