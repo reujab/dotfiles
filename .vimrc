@@ -17,7 +17,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tomtom/tlib_vim'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
@@ -29,6 +29,11 @@ colorscheme onedark
 command! NT call NewTerm()
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+
+let ale_lint_on_enter = 0
+let ale_lint_on_save = 1
+let ale_lint_on_text_changed = 0
+let ale_sign_error = '✗'
 
 let go_fmt_autosave = 0
 
@@ -46,12 +51,6 @@ let lightline.subseparator.right = ''
 let NERDSpaceDelims = 1
 
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
-let syntastic_check_on_open = 1
-let syntastic_check_on_wq = 0
-let syntastic_error_symbol = '✗'
-let syntastic_javascript_checkers = ['eslint']
-let syntastic_warning_symbol = '✗'
 
 nmap - gT
 nmap <c-l> :mode<cr>
