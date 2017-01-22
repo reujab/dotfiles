@@ -82,6 +82,16 @@ gulp-init-js() {
   npm install --save-dev gulp-autoprefixer browserify vinyl-buffer gulp-clean-css gulp gulp-util gulp-pug gulp-sass vinyl-source-stream gulp-sourcemaps gulp-watch watchify
 }
 
+lint() {
+  errcheck "$@"
+
+  if [[ $# = 0 ]]; then
+    go tool vet -all -shadow .
+  else
+    go tool vet -all -shadow "$@"
+  fi
+}
+
 run() {
   c && go build && "./$(basename "$PWD")" "$@" |& panicparse
 }
