@@ -54,7 +54,7 @@ clean() {
   rm "$GOPATH/"{bin,pkg} 2> /dev/null
   rm "$GOPATH/src/"^github.com
   rm "$GOPATH/src/github.com/"^reujab
-  go get github.com/{kisielk/errcheck,maruel/panicparse,nsf/gocode,reujab/bing-background,smartystreets/goconvey} golang.org/x/tools/cmd/goimports
+  go get github.com/{kisielk/errcheck,maruel/panicparse,nsf/gocode,reujab/bing-background,smartystreets/goconvey} golang.org/x/tools/cmd/go{imports,rename}
   unsetopt nullglob
 }
 
