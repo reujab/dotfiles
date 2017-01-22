@@ -86,10 +86,12 @@ lint() {
   errcheck "$@"
 
   if [[ $# = 0 ]]; then
-    go tool vet -all -shadow .
+    vetArgs=.
   else
-    go tool vet -all -shadow "$@"
+    vetArgs=$@
   fi
+
+  go tool vet -all -shadow "$vetArgs" |& grep -v '^.*:\d+: declaration of "err" shadows declaration at .*:\d+$'
 }
 
 run() {
