@@ -83,5 +83,5 @@ gulp-init-js() {
 }
 
 run() {
-  c && go build && "./$(basename "$PWD")" |& panicparse
+  c && go build && "./$(basename "$PWD")" "$@" |& panicparse
 }
