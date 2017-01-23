@@ -1,3 +1,7 @@
+if $NVIM_TUI_ENABLE_CURSOR_SHAPE
+  echo "[Warning] You are in a nested vim session."
+endif
+
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
