@@ -92,6 +92,7 @@ lint() {
   fi
 
   go tool vet -all -shadow "$vetArgs" |& grep -v '^.*:\d+: declaration of "err" shadows declaration at .*:\d+$'
+  golint "$@"
   return 0
 }
 
