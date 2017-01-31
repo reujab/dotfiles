@@ -49,6 +49,9 @@ rules:
     - error
     - properties: never
   capitalized-comments: off
+  comma-dangle:
+    - error
+    - always-multiline
   func-names:
     - error
     - as-needed
