@@ -104,3 +104,7 @@ rules:
     - error
     - never
   wrap-regex: off
+
+  prefer-destructuring:
+    - error
+    - array: false
