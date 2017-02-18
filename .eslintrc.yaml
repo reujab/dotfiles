@@ -36,6 +36,7 @@ rules:
     - error
     - allow:
       - err
+      - e
   no-use-before-define:
     - error
     - functions: false
