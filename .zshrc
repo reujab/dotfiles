@@ -1,3 +1,5 @@
+start=$SECONDS
+
 # plugins
 export ZSH=$HOME/.oh-my-zsh
 
@@ -49,6 +51,17 @@ export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 
 setopt extended_glob
 
+build_prompt() {
+  RETVAL=$?
+
+  prompt_status
+  prompt_context
+  prompt_dir
+  prompt_git
+  prompt_time
+  prompt_end
+}
+
 clean() {
   setopt nullglob
   rm "$GOPATH/"{bin,pkg} 2> /dev/null
@@ -94,6 +107,14 @@ lint() {
   go tool vet -all -shadow "$vetArgs" |& grep -v '^.*:\d+: declaration of "err" shadows declaration at .*:\d+$'
   golint "$@"
   return 0
+}
+
+preexec() {
+  start=$SECONDS
+}
+
+prompt_time() {
+  prompt_segment 13 black $((SECONDS - start))s
 }
 
 run() {
