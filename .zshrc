@@ -14,7 +14,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # general
 alias c="tput reset"
-alias cloc="cloc --exclude-dir node_modules,public --exclude-ext json --not-match-f ^gulpfile.js$ ."
+alias cloc="cloc --exclude-dir node_modules,public --exclude-ext json --not-match-f '^gulpfile\.js$' ."
 alias dnfc="sudo dnf clean"
 alias dnfcd="sudo dnf copr disable"
 alias dnfce="sudo dnf copr enable"
