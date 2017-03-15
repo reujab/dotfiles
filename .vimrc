@@ -8,6 +8,7 @@ call vundle#begin()
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ervandew/supertab'
