@@ -64,6 +64,7 @@ nmap <leader> <plug>(easymotion-prefix)
 nmap <space> :w<cr>
 nmap = gt
 nmap U :redo<cr>
+nmap gp "+p
 
 set cursorline
 set expandtab
@@ -80,6 +81,7 @@ set title
 
 tmap <esc> <c-\><c-n>
 
+vmap gp "+p
 vmap <cr> <plug>NERDCommenterToggle
 vmap s :sort<cr>
 
