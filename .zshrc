@@ -1,4 +1,7 @@
+# startup
 start=$SECONDS
+
+source /etc/profile.d/vte.sh
 
 # plugins
 export ZSH=$HOME/.oh-my-zsh
