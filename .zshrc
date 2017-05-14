@@ -39,7 +39,7 @@ alias io="sudo iotop"
 alias la="ls -A"
 alias ll="ls -ldh"
 alias ls="ls --color=auto"
-alias rm="gvfs-trash"
+alias rm="gio trash"
 alias rmrf="/bin/rm -rf"
 alias v="nvim"
 
