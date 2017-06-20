@@ -75,18 +75,6 @@ clean() {
   unsetopt nullglob
 }
 
-convey() {
-  excludedDirs=node_modules
-
-  [[ -f .goignore ]] && excludedDirs="$excludedDirs,$(sed ':a;N;$!ba;s/\n/,/g' .goignore)"
-
-  goconvey -excludedDirs "$excludedDirs" > /dev/null &
-}
-
-gh() {
-  git clone "https://github.com/$1.git"
-}
-
 gulp-init-electron() {
   npm install --save-dev gulp-autoprefixer gulp-clean-css gulp gulp-util gulp-pug gulp-sass gulp-sourcemaps gulp-watch
 }
