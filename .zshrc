@@ -37,6 +37,7 @@ alias gits="git status"
 alias grep="grep --color=auto -P"
 alias io="sudo iotop"
 alias la="ls -A"
+alias lint="c && gometalinter --config ~/.gometalinter.json"
 alias ll="ls -ldh"
 alias ls="ls --color=auto"
 alias rm="gio trash"
@@ -70,7 +71,7 @@ clean() {
   rm "$GOPATH/"{bin,pkg} 2> /dev/null
   rm "$GOPATH/src/"^github.com
   rm "$GOPATH/src/github.com/"^reujab
-  go get github.com/{kisielk/errcheck,nsf/gocode,reujab/bing-background,smartystreets/goconvey} golang.org/x/tools/cmd/go{imports,rename}
+  go get github.com/{alecthomas/gometalinter,reujab/bing-background} golang.org/x/tools/cmd/go{imports,rename}
   unsetopt nullglob
 }
 
@@ -96,20 +97,6 @@ gulp-init-go() {
 
 gulp-init-js() {
   npm install --save-dev gulp-autoprefixer browserify vinyl-buffer gulp-clean-css gulp gulp-util gulp-pug gulp-sass vinyl-source-stream gulp-sourcemaps gulp-watch watchify
-}
-
-lint() {
-  errcheck "$@"
-
-  if [[ $# = 0 ]]; then
-    vetArgs=.
-  else
-    vetArgs=$@
-  fi
-
-  go tool vet -all -shadow "$vetArgs" |& grep -v '^.*:\d+: declaration of "err" shadows declaration at .*:\d+$'
-  golint "$@"
-  return 0
 }
 
 preexec() {
