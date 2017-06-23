@@ -17,7 +17,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # general
 alias c="tput reset"
-alias cloc="cloc --exclude-dir node_modules,dist --exclude-ext json --not-match-f '^gulpfile\.js$' ."
+alias cloc="cloc --exclude-dir node_modules,dist --exclude-ext json ."
 alias dnfc="sudo dnf clean"
 alias dnfcd="sudo dnf copr disable"
 alias dnfce="sudo dnf copr enable"
@@ -75,18 +75,6 @@ clean() {
   rm "$GOPATH/src/github.com/"^reujab
   go get github.com/{alecthomas/gometalinter,reujab/bing-background} golang.org/x/tools/cmd/go{imports,rename}
   unsetopt nullglob
-}
-
-gulp-init-electron() {
-  npm install --save-dev gulp-autoprefixer gulp-clean-css gulp gulp-util gulp-pug gulp-sass gulp-sourcemaps gulp-watch
-}
-
-gulp-init-go() {
-  npm install --save-dev gulp-autoprefixer browserify vinyl-buffer gulp-clean-css gulp gulp-util gulp-sass vinyl-source-stream gulp-sourcemaps gulp-watch watchify
-}
-
-gulp-init-js() {
-  npm install --save-dev gulp-autoprefixer browserify vinyl-buffer gulp-clean-css gulp gulp-util gulp-pug gulp-sass vinyl-source-stream gulp-sourcemaps gulp-watch watchify
 }
 
 preexec() {
