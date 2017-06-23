@@ -44,6 +44,8 @@ alias rm="gio trash"
 alias rmrf="/bin/rm -rf"
 alias v="nvim"
 
+autoload -U zmv
+
 bindkey "^W" vi-backward-kill-word
 
 eval "$(dircolors)"
