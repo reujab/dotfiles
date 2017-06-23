@@ -8,12 +8,7 @@ env:
   es6: true
   node: true
 rules:
-  no-console:
-    - error
-    - allow:
-      - info
-      - time
-      - timeEnd
+  no-console: off
   no-constant-condition:
     - error
     - checkLoops: false
