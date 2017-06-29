@@ -16,6 +16,10 @@ source "$ZSH/oh-my-zsh.sh"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # general
+alias aur="pacaur"
+alias auri="aur -S"
+alias aurr="aur -Rsu"
+alias aurs="aur -Ss"
 alias c="tput reset"
 alias cloc="cloc --exclude-dir node_modules,dist --exclude-ext json ."
 alias dnfc="sudo dnf clean"
