@@ -25,7 +25,6 @@ Plugin 'w0rp/ale'
 
 call vundle#end()
 
-autocmd ColorScheme * highlight ExtraWhitespace guibg=#e06c75
 autocmd InsertLeave * pclose!
 
 colorscheme onedark
@@ -38,7 +37,6 @@ let ale_lint_on_enter = 0
 let ale_lint_on_save = 1
 let ale_lint_on_text_changed = 0
 let ale_linters = {}
-let ale_linters.go = {}
 let ale_sign_error = '✗'
 
 let go_fmt_command = "goimports"
