@@ -69,6 +69,7 @@ nmap gp "+p
 set cursorline
 set expandtab
 set ignorecase
+set mouse=a
 set nohlsearch
 set number
 set relativenumber
