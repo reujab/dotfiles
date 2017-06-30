@@ -89,6 +89,14 @@ clean() {
   unsetopt nullglob
 }
 
+gcl() {
+  if [[ $1 =~ '^[a-zA-Z0-9]+/[a-zA-Z0-9]+$' ]]; then
+    g clone "https://github.com/$1" "${@:2}"
+  else
+    g clone "$@"
+  fi
+}
+
 preexec() {
   start=$SECONDS
 }
