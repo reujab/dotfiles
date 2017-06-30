@@ -16,6 +16,7 @@ source "$ZSH/oh-my-zsh.sh"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # general
+alias -s go="go run"
 alias aur="pacaur"
 alias auri="aur -S"
 alias aurr="aur -Rsu"
