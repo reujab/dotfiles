@@ -20,7 +20,8 @@
   ],
   "Concurrency": 1,
   "Exclude": [
-    "declaration of \"err\" shadows declaration"
+    "declaration of \"err\" shadows declaration",
+    "error return value not checked \\(defer .+\\.Close\\(\\)\\)"
   ],
   "Deadline": "1m"
 }
