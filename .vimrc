@@ -6,12 +6,30 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
+" Plugin 'Valloric/YouCompleteMe'
+" let ycm_min_num_of_chars_for_completion = 0
+" set completeopt-=preview
+" set shortmess+=c
+
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'ervandew/supertab'
+Plugin 'zchee/deoplete-go'
+inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
+let SuperTabDefaultCompletionType = '<c-n>'
+let deoplete#enable_at_startup = 1
+set completeopt-=preview
+
+" Plugin 'ervandew/supertab'
+" Plugin 'maralla/completor.vim'
+" inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
+" let SuperTabDefaultCompletionType = '<c-n>'
+" set shortmess+=c
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'ervandew/supertab'
 Plugin 'fatih/vim-go'
 Plugin 'garbas/vim-snipmate'
 Plugin 'itchyny/lightline.vim'
