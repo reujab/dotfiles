@@ -72,41 +72,41 @@ export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 setopt extended_glob
 
 build_prompt() {
-  RETVAL=$?
+	RETVAL=$?
 
-  prompt_status
-  prompt_context
-  prompt_dir
-  prompt_git
-  prompt_time
-  prompt_end
+	prompt_status
+	prompt_context
+	prompt_dir
+	prompt_git
+	prompt_time
+	prompt_end
 }
 
 clean() {
-  setopt nullglob
-  rm "$GOPATH/"{bin,pkg} 2> /dev/null
-  rm "$GOPATH/src/"^github.com
-  rm "$GOPATH/src/github.com/"^reujab
-  go get github.com/{alecthomas/gometalinter,reujab/bing-background} golang.org/x/tools/cmd/go{imports,rename}
-  unsetopt nullglob
+	setopt nullglob
+	rm "$GOPATH/"{bin,pkg} 2> /dev/null
+	rm "$GOPATH/src/"^github.com
+	rm "$GOPATH/src/github.com/"^reujab
+	go get github.com/{alecthomas/gometalinter,reujab/bing-background} golang.org/x/tools/cmd/go{imports,rename}
+	unsetopt nullglob
 }
 
 gcl() {
-  if [[ $1 =~ '^[a-zA-Z0-9]+/[a-zA-Z0-9]+$' ]]; then
-    g clone "https://github.com/$1" "${@:2}"
-  else
-    g clone "$@"
-  fi
+	if [[ $1 =~ '^[a-zA-Z0-9]+/[a-zA-Z0-9]+$' ]]; then
+		g clone "https://github.com/$1" "${@:2}"
+	else
+		g clone "$@"
+	fi
 }
 
 preexec() {
-  start=$SECONDS
+	start=$SECONDS
 }
 
 prompt_time() {
-  prompt_segment 13 black $((SECONDS - start))s
+	prompt_segment 13 black $((SECONDS - start))s
 }
 
 run() {
-  c && go build && "./$(basename "$PWD")" "$@"
+	c && go build && "./$(basename "$PWD")" "$@"
 }

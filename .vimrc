@@ -1,5 +1,5 @@
 if $NVIM_TUI_ENABLE_CURSOR_SHAPE
-  echo "[Warning] You are in a nested vim session."
+	echo "[Warning] You are in a nested vim session."
 endif
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -84,7 +84,6 @@ nmap U :redo<cr>
 nmap gp "+p
 
 set cursorline
-set expandtab
 set ignorecase
 set mouse=a
 set nohlsearch
@@ -92,7 +91,6 @@ set number
 set relativenumber
 set shiftwidth=2
 set smarttab
-set softtabstop=2
 set tabstop=2
 set termguicolors
 set title
@@ -104,7 +102,7 @@ vmap <cr> <plug>NERDCommenterToggle
 vmap s :sort<cr>
 
 function! NewTerm()
-  tabe term://.//zsh
-  tabm 0
-  startinsert
+	tabe term://.//zsh
+	tabm 0
+	startinsert
 endfunction

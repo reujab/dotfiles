@@ -1,27 +1,27 @@
 {
-  "DisableAll": true,
-  "Enable": [
-    "vet",
-    "vetshadow",
-    "gotype",
-    "deadcode",
-    "golint",
-    "varcheck",
-    "structcheck",
-    "errcheck",
-    "ineffassign",
-    "interfacer",
-    "unconvert",
-    "gosimple",
-    "staticcheck",
-    "misspell",
-    "unparam",
-    "unused"
-  ],
-  "Concurrency": 1,
-  "Exclude": [
-    "declaration of \"err\" shadows declaration",
-    "error return value not checked \\(defer .+\\.Close\\(\\)\\)"
-  ],
-  "Deadline": "1m"
+	"DisableAll": true,
+	"Enable": [
+		"vet",
+		"vetshadow",
+		"gotype",
+		"deadcode",
+		"golint",
+		"varcheck",
+		"structcheck",
+		"errcheck",
+		"ineffassign",
+		"interfacer",
+		"unconvert",
+		"gosimple",
+		"staticcheck",
+		"misspell",
+		"unparam",
+		"unused"
+	],
+	"Concurrency": 1,
+	"Exclude": [
+		"declaration of \"err\" shadows declaration",
+		"error return value not checked \\(defer .+\\.Close\\(\\)\\)"
+	],
+	"Deadline": "1m"
 }
