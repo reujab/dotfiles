@@ -58,6 +58,7 @@ alias rm="gio trash"
 alias rmrf="/bin/rm -rf"
 alias v="nvim"
 alias gsm="g submodule"
+alias grm="g rm"
 
 autoload -U zmv
 
