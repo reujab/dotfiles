@@ -2,46 +2,45 @@ if $NVIM_TUI_ENABLE_CURSOR_SHAPE
 	echo "[Warning] You are in a nested vim session."
 endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
+source ~/.vim/plugged/vim-plug/plug.vim
 
-call vundle#begin()
+call plug#begin()
 
-" Plugin 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 " let ycm_min_num_of_chars_for_completion = 0
 " set completeopt-=preview
 " set shortmess+=c
 
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'ervandew/supertab'
-Plugin 'zchee/deoplete-go'
+Plug 'Shougo/deoplete.nvim'
+Plug 'ervandew/supertab'
+Plug 'zchee/deoplete-go'
 inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
 let SuperTabDefaultCompletionType = '<c-n>'
 let deoplete#enable_at_startup = 1
 set completeopt-=preview
 
-" Plugin 'ervandew/supertab'
-" Plugin 'maralla/completor.vim'
+" Plug 'ervandew/supertab'
+" Plug 'maralla/completor.vim'
 " inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
 " let SuperTabDefaultCompletionType = '<c-n>'
 " set shortmess+=c
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'fatih/vim-go'
-Plugin 'garbas/vim-snipmate'
-Plugin 'itchyny/lightline.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'joshdick/onedark.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tomtom/tlib_vim'
-Plugin 'tpope/vim-surround'
-Plugin 'w0rp/ale'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'airblade/vim-gitgutter'
+Plug 'digitaltoad/vim-pug'
+Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go'
+Plug 'garbas/vim-snipmate'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'joshdick/onedark.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-surround'
+Plug 'w0rp/ale'
 
-call vundle#end()
+call plug#end()
 
 autocmd InsertLeave * pclose!
 
