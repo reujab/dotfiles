@@ -65,9 +65,9 @@ autoload -U zmv
 bindkey "^W" vi-backward-kill-word
 
 eval "$(dircolors)"
+eval "$(go env)"
 
 export EDITOR=nvim
-export GOPATH=$HOME/go
 export LESSHISTFILE=$HOME/.cache/.lesshist
 export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 
