@@ -94,7 +94,7 @@ clean() {
 }
 
 gcl() {
-	if [[ $1 =~ '^[a-zA-Z0-9]+/[a-zA-Z0-9]+$' ]]; then
+	if [[ $1 =~ '^[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+$' ]]; then
 		g clone "https://github.com/$1" "${@:2}"
 	else
 		g clone "$@"
