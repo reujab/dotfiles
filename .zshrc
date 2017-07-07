@@ -73,6 +73,8 @@ export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 
 setopt extended_glob
 
+unset LESS
+
 build_prompt() {
 	RETVAL=$?
 
