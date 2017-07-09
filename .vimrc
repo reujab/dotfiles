@@ -27,6 +27,7 @@ set completeopt-=preview
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'airblade/vim-gitgutter'
+Plug 'dag/vim-fish'
 Plug 'digitaltoad/vim-pug'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'

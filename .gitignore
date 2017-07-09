@@ -1,3 +1,4 @@
+!/.vim/plugged/vim-plug
 /.vim/.netrwhist
 /.vim/plugged/*
-!/.vim/plugged/vim-plug
+fish/fishd.*
