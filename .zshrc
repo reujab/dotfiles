@@ -1,16 +1,16 @@
-# startup
-start=$SECONDS
-
 source /etc/profile.d/vte.sh
 
 # plugins
+eval "$(go env)"
+export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 export ZSH=$HOME/.oh-my-zsh
 
-DEFAULT_USER=$USER
+BRONZE=(black:white:status blue:black:shortdir green:black:git magenta:black:cmdtime)
 HYPHEN_INSENSITIVE=true
 PLUGINS=()
 ZSH_COMPDUMP=$HOME/.cache/.zcompdump
-ZSH_THEME=agnoster
+
+eval "$(bronze init)"
 
 source "$ZSH/oh-my-zsh.sh"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -65,26 +65,13 @@ autoload -U zmv
 bindkey "^W" vi-backward-kill-word
 
 eval "$(dircolors)"
-eval "$(go env)"
 
 export EDITOR=nvim
 export LESSHISTFILE=$HOME/.cache/.lesshist
-export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 
 setopt extended_glob
 
 unset LESS
-
-build_prompt() {
-	RETVAL=$?
-
-	prompt_status
-	prompt_context
-	prompt_dir
-	prompt_git
-	prompt_time
-	prompt_end
-}
 
 clean() {
 	setopt nullglob
@@ -101,14 +88,6 @@ gcl() {
 	else
 		g clone "$@"
 	fi
-}
-
-preexec() {
-	start=$SECONDS
-}
-
-prompt_time() {
-	prompt_segment 13 black $((SECONDS - start))s
 }
 
 run() {
