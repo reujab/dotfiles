@@ -1,3 +1,3 @@
 function e
-	eval $EDITOR $argv
+	nvim $argv
 end
