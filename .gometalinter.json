@@ -9,14 +9,12 @@
 		"varcheck",
 		"structcheck",
 		"errcheck",
+		"megacheck",
 		"ineffassign",
 		"interfacer",
 		"unconvert",
-		"gosimple",
-		"staticcheck",
 		"misspell",
-		"unparam",
-		"unused"
+		"unparam"
 	],
 	"Concurrency": 1,
 	"Exclude": [
