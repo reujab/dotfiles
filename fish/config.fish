@@ -3,5 +3,6 @@ set -x SHELL fish
 set -x EDITOR nvim
 set -x LESSHISTFILE ~/.cache/.lesshist
 set fish_greeting
-set BRONZE black:white:status blue:black:shortdir green:black:git magenta:black:cmdtime
+set BRONZE status:black:white pacaur:black:white dir:blue:black git:green:black cmdtime:magenta:black
+set -x BRONZE_DIR_LENGTH 1
 eval (bronze init)
