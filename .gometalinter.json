@@ -21,5 +21,5 @@
 		"declaration of \"err\" shadows declaration",
 		"error return value not checked \\(defer .+\\.Close\\(\\)\\)"
 	],
-	"Deadline": "1m"
+	"Deadline": "5m"
 }
