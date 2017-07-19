@@ -1,3 +1,3 @@
 function aur
-	pacaur $argv
+	pacaur --noedit $argv
 end
