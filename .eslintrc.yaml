@@ -1,106 +1,106 @@
 extends:
-	- eslint:all
+  - eslint:all
 parserOptions:
-	ecmaVersion: 6
-	sourceType: module
+  ecmaVersion: 6
+  sourceType: module
 env:
-	browser: true
-	es6: true
-	node: true
+  browser: true
+  es6: true
+  node: true
 rules:
-	no-console: off
-	no-constant-condition:
-		- error
-		- checkLoops: false
-	no-empty:
-		- error
-		- allowEmptyCatch: true
-	no-inner-declarations: off
-	no-prototype-builtins: off
+  no-console: off
+  no-constant-condition:
+    - error
+    - checkLoops: false
+  no-empty:
+    - error
+    - allowEmptyCatch: true
+  no-inner-declarations: off
+  no-prototype-builtins: off
 
-	default-case: off
-	guard-for-in: off
-	no-loop-func: off
-	no-magic-numbers: off
-	no-warning-comments: off
-	wrap-iife:
-		- error
-		- inside
+  default-case: off
+  guard-for-in: off
+  no-loop-func: off
+  no-magic-numbers: off
+  no-warning-comments: off
+  wrap-iife:
+    - error
+    - inside
 
-	no-catch-shadow: off
-	no-shadow:
-		- error
-		- allow:
-			- err
-			- e
-	no-use-before-define:
-		- error
-		- functions: false
+  no-catch-shadow: off
+  no-shadow:
+    - error
+    - allow:
+      - err
+      - e
+  no-use-before-define:
+    - error
+    - functions: false
 
-	callback-return: off
-	no-process-env: off
-	no-process-exit: off
-	no-sync: off
+  callback-return: off
+  no-process-env: off
+  no-process-exit: off
+  no-sync: off
 
-	camelcase:
-		- error
-		- properties: never
-	capitalized-comments: off
-	comma-dangle:
-		- error
-		- always-multiline
-	func-names:
-		- error
-		- as-needed
-	func-style:
-		- error
-		- declaration
-	id-length: off
-	indent:
-		- error
-		- 2
-		- SwitchCase: 1
-	lines-around-comment: off
-	max-depth: off
-	max-len: off
-	max-nested-callbacks: off
-	max-params: off
-	max-statements: off
-	multiline-ternary: off
-	no-continue: off
-	no-mixed-operators: off
-	no-multiple-empty-lines:
-		- error
-		- max: 1
-			maxEOF: 0
-			maxBOF: 0
-	no-plusplus: off
-	no-ternary: off
-	object-curly-newline:
-		- error
-		- ObjectExpression:
-				minProperties: 1
-			ObjectPattern: never
-	one-var:
-		- error
-		- never
-	padded-blocks:
-		- error
-		- never
-	quote-props:
-		- error
-		- as-needed
-	require-jsdoc: off
-	semi:
-		- error
-		- never
-	sort-keys: off
-	sort-vars: off
-	space-before-function-paren:
-		- error
-		- never
-	wrap-regex: off
+  camelcase:
+    - error
+    - properties: never
+  capitalized-comments: off
+  comma-dangle:
+    - error
+    - always-multiline
+  func-names:
+    - error
+    - as-needed
+  func-style:
+    - error
+    - declaration
+  id-length: off
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  lines-around-comment: off
+  max-depth: off
+  max-len: off
+  max-nested-callbacks: off
+  max-params: off
+  max-statements: off
+  multiline-ternary: off
+  no-continue: off
+  no-mixed-operators: off
+  no-multiple-empty-lines:
+    - error
+    - max: 1
+      maxEOF: 0
+      maxBOF: 0
+  no-plusplus: off
+  no-ternary: off
+  object-curly-newline:
+    - error
+    - ObjectExpression:
+        minProperties: 1
+      ObjectPattern: never
+  one-var:
+    - error
+    - never
+  padded-blocks:
+    - error
+    - never
+  quote-props:
+    - error
+    - as-needed
+  require-jsdoc: off
+  semi:
+    - error
+    - never
+  sort-keys: off
+  sort-vars: off
+  space-before-function-paren:
+    - error
+    - never
+  wrap-regex: off
 
-	prefer-destructuring:
-		- error
-		- array: false
+  prefer-destructuring:
+    - error
+    - array: false
