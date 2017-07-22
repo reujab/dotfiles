@@ -58,8 +58,7 @@ rules:
   id-length: off
   indent:
     - error
-    - 2
-    - SwitchCase: 1
+    - tab
   lines-around-comment: off
   max-depth: off
   max-len: off
@@ -75,6 +74,7 @@ rules:
       maxEOF: 0
       maxBOF: 0
   no-plusplus: off
+  no-tabs: off
   no-ternary: off
   object-curly-newline:
     - error
