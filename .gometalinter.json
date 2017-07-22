@@ -6,20 +6,19 @@
 		"gotype",
 		"deadcode",
 		"golint",
-		"varcheck",
-		"structcheck",
 		"errcheck",
 		"megacheck",
 		"ineffassign",
 		"interfacer",
 		"unconvert",
-		"misspell",
-		"unparam"
+		"misspell"
 	],
 	"Concurrency": 1,
 	"Exclude": [
-		"declaration of \"err\" shadows declaration",
-		"error return value not checked \\(defer .+\\.Close\\(\\)\\)"
+		"possible formatting directive in .*[Pp]rint.* call",
+		"declaration of \"err\" shadows declaration at",
+		".*Asset.* is unused",
+		"should not use dot imports"
 	],
 	"Deadline": "5m"
 }
