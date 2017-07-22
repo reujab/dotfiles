@@ -5,7 +5,9 @@ eval "$(go env)"
 export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 export ZSH=$HOME/.oh-my-zsh
 
-BRONZE=(black:white:status blue:black:shortdir green:black:git magenta:black:cmdtime)
+BRONZE=(status:black:white dir:blue:black git:green:black cmdtime:magenta:black)
+export BRONZE_SHELL=zsh
+export BRONZE_DIR_LENGTH=1
 HYPHEN_INSENSITIVE=true
 PLUGINS=()
 ZSH_COMPDUMP=$HOME/.cache/.zcompdump
