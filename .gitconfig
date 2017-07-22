@@ -2,7 +2,7 @@
 	email = reujab@gmail.com
 	name = reujab
 [credential]
-	helper = cache --timeout=3600
+	helper = gnome-keyring
 [advice]
 	statusHints = false
 	pushNonFastForward = false
