@@ -27,6 +27,7 @@ rules:
     - error
     - inside
 
+  init-declarations: off
   no-catch-shadow: off
   no-shadow:
     - error
@@ -104,3 +105,4 @@ rules:
   prefer-destructuring:
     - error
     - array: false
+  sort-imports: off
