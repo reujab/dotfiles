@@ -27,6 +27,7 @@ set completeopt-=preview
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'airblade/vim-gitgutter'
+Plug 'alvan/vim-closetag'
 Plug 'dag/vim-fish'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'digitaltoad/vim-pug'
@@ -59,6 +60,8 @@ let ale_lint_on_text_changed = 0
 let ale_linters = {}
 let ale_linters.go = {}
 let ale_sign_error = '✗'
+
+let closetag_filenames = '*.html,*.tmpl'
 
 let go_fmt_command = "goimports"
 let go_template_autocreate = 0
