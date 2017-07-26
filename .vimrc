@@ -54,6 +54,8 @@ command! NT call NewTerm()
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 
+let AutoPairsFlyMode = 1
+
 let ale_lint_on_enter = 0
 let ale_lint_on_save = 1
 let ale_lint_on_text_changed = 0
