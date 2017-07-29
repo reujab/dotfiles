@@ -1,3 +1,3 @@
 function gds
-	gd --staged
+	gd --staged $argv
 end

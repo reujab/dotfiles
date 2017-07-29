@@ -1,3 +1,3 @@
 function auru
-	aur -Syu
+	aur -Syu $argv
 end

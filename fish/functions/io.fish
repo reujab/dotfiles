@@ -1,3 +1,3 @@
 function io
-	sudo iotop
+	sudo iotop $argv
 end
