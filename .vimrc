@@ -41,6 +41,7 @@ Plug 'junegunn/vim-plug'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 
