@@ -43,6 +43,7 @@ rules:
   no-process-exit: off
   no-sync: off
 
+  array-element-newline: off
   camelcase:
     - error
     - properties: never
