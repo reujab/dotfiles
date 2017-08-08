@@ -61,7 +61,7 @@ let ale_lint_on_enter = 0
 let ale_lint_on_save = 1
 let ale_lint_on_text_changed = 0
 let ale_linters = {}
-let ale_linters.go = {}
+let ale_linters.go = []
 let ale_sign_error = '✗'
 
 let closetag_filenames = '*.html,*.tmpl'
