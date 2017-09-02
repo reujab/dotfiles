@@ -18,7 +18,8 @@
 		"possible formatting directive in .*[Pp]rint.* call",
 		"declaration of \"err\" shadows declaration at",
 		".*Asset.* is unused",
-		"should not use dot imports"
+		"should not use dot imports",
+		"error return value not checked \\(defer res\\.Body\\.Close\\(\\)\\)"
 	],
 	"Deadline": "5m"
 }
