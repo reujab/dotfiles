@@ -251,7 +251,9 @@ rules:
     - error
     - never
   semi-spacing: error
-  semi-style: error
+  semi-style:
+    - error
+    - first
   sort-keys: off
   sort-vars: off
   space-before-blocks: off
