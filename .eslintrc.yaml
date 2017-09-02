@@ -259,7 +259,9 @@ rules:
   space-before-blocks: off
   space-before-function-paren:
     - error
-    - never
+    - anonymous: never
+      named: never
+      asyncArrow: always
   space-in-parens: error
   space-infix-ops: error
   space-unary-ops: error
