@@ -1,29 +1,31 @@
 source /etc/profile.d/vte.sh
 
-# plugins
+# variables
+eval "$(dircolors)"
 eval "$(go env)"
+export EDITOR=nvim
+export LESSHISTFILE=$HOME/.cache/.lesshist
 export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
-export ZSH=$HOME/.oh-my-zsh
 
+# zsh
+bindkey "^W" vi-backward-kill-word
+
+# oh my zsh
+export ZSH=$HOME/.oh-my-zsh
+ZSH_COMPDUMP=$HOME/.cache/.zcompdump
+source "$ZSH/oh-my-zsh.sh"
+
+# bronze
 BRONZE=(status:black:white dir:blue:black git:green:black cmdtime:magenta:black)
 export BRONZE_SHELL=zsh
 export BRONZE_DIR_LENGTH=1
-HYPHEN_INSENSITIVE=true
-PLUGINS=()
-ZSH_COMPDUMP=$HOME/.cache/.zcompdump
-
 eval "$(bronze init)"
 
-source "$ZSH/oh-my-zsh.sh"
+# zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# general
-alias -s go="go run"
+# aliases
 alias aur="pacaur"
-alias auri="aur -S"
-alias aurr="aur -Rsu"
-alias aurs="aur -Ss"
-alias auru="aur -Su"
 alias c="tput reset"
 alias cloc="cloc --exclude-dir node_modules,dist --exclude-ext json ."
 alias dnfc="sudo dnf clean"
@@ -36,6 +38,8 @@ alias dnfp="dnf provides"
 alias dnfr="sudo dnf remove"
 alias dnfs="dnf search"
 alias dnfu="sudo dnf upgrade"
+alias e="$EDITOR"
+alias f="fg"
 alias g="git"
 alias ga="g add"
 alias gap="g add -p"
@@ -44,44 +48,42 @@ alias gc="g commit"
 alias gca="gc --amend"
 alias gco="g checkout"
 alias gd="g diff"
+alias gds="gd --staged"
 alias gi="git init"
 alias gl="g log"
 alias gp="g push"
 alias gpu="g pull"
 alias gr="g reset"
+alias gre="g remote"
 alias grep="grep --color=auto -P"
+alias grm="g rm"
 alias gs="g status"
+alias gsm="g submodule"
 alias gst="g stash"
+alias gsta="gst add"
+alias gstd="gst drop"
+alias gstl="gst list"
+alias gstp="gst pop"
 alias io="sudo iotop"
-alias la="ls -A"
-alias lint="c && gometalinter --config ~/.gometalinter.json"
-alias ll="ls -ldh"
-alias ls="ls --color=auto"
+alias lint="c; gometalinter --config ~/.gometalinter.json"
+alias ll="ls -l"
+alias ls="exa -a"
+alias prename="perl-rename"
 alias rm="gio trash"
 alias rmrf="/bin/rm -rf"
-alias v="nvim"
-alias gsm="g submodule"
-alias grm="g rm"
+alias rsu="aur -Rsu"
+alias s="aur -S"
+alias ss="aur -Ss"
+alias syu="aur -Syu"
+alias t="task"
 
-autoload -U zmv
-
-bindkey "^W" vi-backward-kill-word
-
-eval "$(dircolors)"
-
-export EDITOR=nvim
-export LESSHISTFILE=$HOME/.cache/.lesshist
-
-setopt extended_glob
-
-unset LESS
-
+# functions
 clean() {
 	setopt nullglob
 	rm "$GOPATH/"{bin,pkg} 2> /dev/null
 	rm "$GOPATH/src/"^github.com
 	rm "$GOPATH/src/github.com/"^reujab
-	go get github.com/{alecthomas/gometalinter,reujab/bing-background} golang.org/x/tools/cmd/go{imports,rename}
+	go get github.com/{alecthomas/gometalinter,reujab/{bing-background,bronze}} golang.org/x/tools/cmd/go{imports,rename}
 	unsetopt nullglob
 }
 
@@ -94,5 +96,6 @@ gcl() {
 }
 
 run() {
-	c && go build && "./$(basename "$PWD")" "$@"
+	c
+	go build && "./$(basename "$PWD")" "$@"
 }
