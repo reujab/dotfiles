@@ -8,6 +8,8 @@ export LESSHISTFILE=$HOME/.cache/.lesshist
 export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
 
 # zsh
+# enables aliases with sudo
+alias sudo="sudo "
 bindkey "^W" vi-backward-kill-word
 
 # oh my zsh
