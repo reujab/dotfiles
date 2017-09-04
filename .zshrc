@@ -1,7 +1,6 @@
 source /etc/profile.d/vte.sh
 
 # variables
-eval "$(dircolors)"
 eval "$(go env)"
 export EDITOR=nvim
 export LESSHISTFILE=$HOME/.cache/.lesshist
