@@ -90,7 +90,9 @@ clean() {
 }
 
 gcl() {
-	if [[ $1 =~ '^[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+$' ]]; then
+	if [[ $1 =~ '^[a-zA-Z0-9_-]+$' ]]; then
+		g clone "http://gogs/reujab/$1" "${@:2}"
+	elif [[ $1 =~ '^[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+$' ]]; then
 		g clone "https://github.com/$1" "${@:2}"
 	else
 		g clone "$@"
