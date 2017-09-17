@@ -49,6 +49,8 @@ Plug 'w0rp/ale'
 call plug#end()
 
 autocmd InsertLeave * pclose!
+autocmd FileType tex let b:deoplete_disable_auto_complete = 1
+autocmd BufNewFile,BufRead *.tex set ft=tex
 
 colorscheme onedark
 
