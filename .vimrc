@@ -118,3 +118,6 @@ function! NewTerm()
 	tabm 0
 	startinsert
 endfunction
+
+" temporary auto-pairs workaround
+autocmd VimEnter,BufEnter,BufWinEnter * silent! iunmap <buffer> <M-">
