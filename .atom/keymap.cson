@@ -1,0 +1,28 @@
+'atom-text-editor.autocomplete-active, atom-panel.modal':
+	'ctrl-n': 'core:move-down'
+	'ctrl-p': 'core:move-up'
+
+'atom-text-editor.mini':
+	'ctrl-u': 'editor:delete-line'
+	'ctrl-w': 'editor:delete-to-beginning-of-word'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+	'ctrl-e': 'vim-mode-plus:mini-scroll-down'
+	'ctrl-y': 'vim-mode-plus:mini-scroll-up'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+	'-': 'vim-mode-plus:previous-tab'
+	'=': 'vim-mode-plus:next-tab'
+	'U': 'vim-mode-plus:redo'
+	'd s': 'vim-mode-plus:delete-surround'
+	'space': 'core:save'
+
+'atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode':
+	'enter': 'editor:toggle-line-comments'
+
+'atom-text-editor.vim-mode-plus.visual-mode':
+	'S': 'vim-mode-plus:surround'
+	's': 'vim-mode-plus:sort'
+
+'atom-workspace':
+	'ctrl-q': 'tabs:close-tab'

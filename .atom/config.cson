@@ -1,0 +1,66 @@
+"*":
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab"
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "autocomplete-snippets"
+      "autosave"
+      "welcome"
+      "wrap-guide"
+    ]
+    projectHome: "/home/chris/reujab"
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Fira Code"
+    preferredLineLength: 100
+    scrollPastEnd: true
+    softTabs: false
+    softWrap: true
+  "go-plus":
+    guru:
+      highlightIdentifiers: false
+    panel:
+      displayMode: "closed"
+      focusOnFailure: false
+    test:
+      runTestsOnSave: false
+  jumpy:
+    fontSize: 1
+    highContrast: true
+  linter:
+    lintOnChange: false
+  "linter-ui-default":
+    panelHeight: 300
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#282a2e"
+        blue: "#5f819d"
+        cyan: "#5e8d87"
+        green: "#98c379"
+        magenta: "#ad7fa8"
+        red: "#a54242"
+        white: "#707880"
+        yellow: "#de935f"
+      zBright:
+        brightBlack: "#373b41"
+        brightBlue: "#81a2be"
+        brightCyan: "#8abeb7"
+        brightGreen: "#b5bd68"
+        brightMagenta: "#b294bb"
+        brightRed: "#cc6666"
+        brightWhite: "#c5c8c6"
+        brightYellow: "#f0c674"
+    style:
+      animationSpeed: 0
+      fontFamily: "CodeNewRoman Nerd Font Mono"
+      theme: "one-dark"
+    toggles:
+      autoClose: true
+  tabs:
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  "vim-mode-plus":
+    useSmartcaseForSearch: true
