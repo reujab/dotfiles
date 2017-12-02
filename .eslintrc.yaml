@@ -185,6 +185,7 @@ rules:
   indent:
     - error
     - tab
+  implicit-arrow-linebreak: error
   jsx-quotes: error
   key-spacing: error
   keyword-spacing: error
