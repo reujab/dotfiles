@@ -67,5 +67,8 @@
   tabs:
     enableMruTabSwitching: false
     enableVcsColoring: true
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
   "vim-mode-plus":
     useSmartcaseForSearch: true
