@@ -33,6 +33,9 @@
     highContrast: true
   linter:
     lintOnChange: false
+  "linter-eslint":
+    eslintrcPath: "/home/chris/.eslintrc.yaml"
+    fixOnSave: true
   "linter-ui-default":
     panelHeight: 300
   "platformio-ide-terminal":
