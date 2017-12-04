@@ -27,3 +27,7 @@
 
 'atom-workspace':
 	'ctrl-q': 'tabs:close-tab'
+
+'atom-workspace atom-text-editor[data-grammar~=latex]':
+	'f5': 'reujab:openPDF'
+	'f6': 'reujab:evince'
