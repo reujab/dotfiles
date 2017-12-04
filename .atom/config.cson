@@ -4,13 +4,15 @@
     confirmCompletion: "tab"
   "bracket-matcher":
     alwaysSkipClosingPairs: true
+  "command-palette":
+    preserveLastSearch: true
   core:
     allowPendingPaneItems: false
     disabledPackages: [
-      "autocomplete-snippets"
       "autosave"
       "welcome"
       "wrap-guide"
+      "github"
     ]
     projectHome: "/home/chris/reujab"
     telemetryConsent: "limited"
@@ -18,8 +20,11 @@
     fontFamily: "Fira Code"
     preferredLineLength: 100
     scrollPastEnd: true
+    showIndentGuide: true
     softTabs: false
     softWrap: true
+  "find-and-replace":
+    autocompleteSearches: true
   "go-plus":
     guru:
       highlightIdentifiers: false
@@ -34,8 +39,11 @@
   linter:
     lintOnChange: false
   "linter-eslint":
+    disableWhenNoEslintConfig: false
     eslintrcPath: "/home/chris/.eslintrc.yaml"
     fixOnSave: true
+  "linter-latex":
+    compiler: "xelatex"
   "linter-ui-default":
     panelHeight: 300
   "platformio-ide-terminal":
