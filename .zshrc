@@ -33,7 +33,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # aliases
 alias aur="pacaur"
 alias c="tput reset"
-alias cloc="cloc --exclude-dir node_modules,dist --exclude-ext json,yaml ."
+alias tokei="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml"
 alias dnfc="sudo dnf clean"
 alias dnfcd="sudo dnf copr disable"
 alias dnfce="sudo dnf copr enable"
