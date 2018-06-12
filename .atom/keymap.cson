@@ -1,6 +1,10 @@
+'*':
+		'ctrl-shift-w': 'unset!'
+
 'atom-text-editor.autocomplete-active, atom-panel.modal':
 	'ctrl-n': 'core:move-down'
 	'ctrl-p': 'core:move-up'
+	'shift-enter': 'autocomplete-plus:cancel'
 
 'atom-text-editor.mini':
 	'ctrl-u': 'editor:delete-line'
