@@ -4,7 +4,7 @@ source /etc/profile.d/vte.sh
 eval "$(go env)"
 export EDITOR=nvim
 export LESSHISTFILE=$HOME/.cache/.lesshist
-export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin
+export PATH=/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:~/.cargo/bin
 
 # zsh
 # enables aliases with sudo
