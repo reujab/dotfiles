@@ -81,7 +81,6 @@ alias rsu="aur -Rsu"
 alias s="aur -S"
 alias ss="aur -Ss"
 alias syu="aur -Syu"
-alias t="task"
 
 # functions
 clean() {
