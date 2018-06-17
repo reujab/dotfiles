@@ -1,0 +1,19 @@
+/* web page */
+#context-navigation, #context-savepage, #context-pocket, #context-viewsource, #context-viewinfo, #context-sendpagetodevice {
+	display: none !important;
+}
+
+/* link */
+#context-savelinktopocket, #context-sendlinktodevice {
+	display: none !important;
+}
+
+/* bookmark */
+#placesContext_open {
+	display: none !important;
+}
+
+/* qr code */
+#jid0-rwtyslpoku14fw7yw2afloaihha_jetpack-menuitem-1 {
+	display: none !important;
+}
