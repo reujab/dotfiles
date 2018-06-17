@@ -62,6 +62,8 @@ rules:
   dot-location: error
   dot-notation: error
   eqeqeq: error
+  guard-for-in: off
+  max-classes-per-file: off
   no-caller: error
   no-case-declarations: error
   no-div-regex: off
@@ -252,6 +254,7 @@ rules:
     - error
     - never
   padding-line-between-statements: off
+  prefer-object-spread: error
   quote-props:
     - error
     - as-needed
