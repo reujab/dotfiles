@@ -16,12 +16,12 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_COMPDUMP=$HOME/.cache/.zcompdump
 source "$ZSH/oh-my-zsh.sh"
 
-# bronze
-BRONZE=(status:black:white packages:black:white dir:blue:black git:green:black cmdtime:magenta:black)
-export BRONZE_SHELL=zsh
-export BRONZE_DIR_LENGTH=1
-export BRONZE_DIR_ALIASES=~/go/src/github.com/reujab:$'\ue627'
-eval "$(bronze init)"
+# silver
+SILVER=(status:black:white dir:blue:black git:green:black cmdtime:magenta:black)
+export SILVER_SHELL=zsh
+export SILVER_DIR_LENGTH=1
+export SILVER_DIR_ALIASES=~/go/src/github.com/reujab:$'\ue627'
+eval "$(silver init)"
 
 # zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
