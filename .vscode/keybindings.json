@@ -24,4 +24,25 @@
 		"command": "workbench.action.quickOpenSelectNext",
 		"when": "inQuickOpen",
 	},
+	// enable ctrl+e and ctrl+y in any mode
+	{
+		"key": "ctrl+e",
+		"command": "editorScroll",
+		"args": {
+			"to": "down",
+			"by": "line",
+			"revealCursor": true,
+		},
+		"when": "editorTextFocus",
+	},
+	{
+		"key": "ctrl+y",
+		"command": "editorScroll",
+		"args": {
+			"to": "up",
+			"by": "line",
+			"revealCursor": true,
+		},
+		"when": "editorTextFocus",
+	},
 ]
