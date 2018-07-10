@@ -70,90 +70,41 @@
 	"vim.normalModeKeyBindings": [
 		// comment
 		{
-			"before": [
-				"<CR>",
-			],
-			"commands": [
-				{
-					"command": "editor.action.commentLine",
-				},
-			],
+			"before": ["<CR>"],
+			"commands": [{"command": "editor.action.commentLine"}],
 		},
 		// copy to clipboard
 		{
-			"before": [
-				"g",
-				"y",
-			],
-			"after": [
-				"\"",
-				"+",
-				"Y",
-			],
+			"before": ["g", "y"],
+			"after": ["\"", "+", "Y"],
 		},
 		// paste from clipboard
 		{
-			"before": [
-				"g",
-				"p",
-			],
-			"after": [
-				"\"",
-				"+",
-				"p",
-			],
+			"before": ["g", "p"],
+			"after": ["\"", "+", "p"],
 		},
 		{
-			"before": [
-				"g",
-				"P",
-			],
-			"after": [
-				"\"",
-				"+",
-				"P",
-			],
+			"before": ["g", "P"],
+			"after": ["\"", "+", "P"],
 		},
 		// redo
 		{
-			"before": [
-				"U",
-			],
-			"after": [
-				"<C-r>",
-			],
+			"before": ["U"],
+			"after": ["<C-r>"],
 		},
 		// save
 		{
-			"before": [
-				"<Space>",
-			],
-			"commands": [
-				{
-					"command": ":w",
-				},
-			],
+			"before": ["<Space>"],
+			"commands": [{"command": ":w"}],
 		},
 		// tabs
 		{
-			"before": [
-				"-",
-			],
-			"commands": [
-				{
-					"command": ":tabp",
-				},
-			],
+			"before": ["-"],
+			"commands": [{"command": ":tabp"}],
 		},
 		{
-			"before": [
-				"=",
-			],
-			"commands": [
-				{
-					"command": ":tabn",
-				},
-			],
+			"before": ["="],
+			"commands": [{"command": ":tabn"}],
 		},
 	],
 	"vim.sneak": true,
@@ -162,37 +113,18 @@
 	"vim.visualModeKeyBindings": [
 		// comment
 		{
-			"before": [
-				"<CR>",
-			],
-			"commands": [
-				{
-					"command": "editor.action.commentLine",
-				},
-			],
+			"before": ["<CR>"],
+			"commands": [{"command": "editor.action.commentLine"}],
 		},
 		// copy to clipboard
 		{
-			"before": [
-				"g",
-				"y",
-			],
-			"after": [
-				"\"",
-				"+",
-				"y",
-			],
+			"before": ["g", "y"],
+			"after": ["\"", "+", "y"],
 		},
 		// sort
 		{
-			"before": [
-				"s",
-			],
-			"commands": [
-				{
-					"command": ":sort",
-				},
-			],
+			"before": ["s"],
+			"commands": [{"command": ":sort"}],
 		},
 	],
 	// window
