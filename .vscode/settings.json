@@ -13,6 +13,7 @@
 	"editor.insertSpaces": false,
 	"editor.minimap.showSlider": "always",
 	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.occurrencesHighlight": false,
 	"editor.quickSuggestions": {
 		"other": true,
 		"comments": true,
