@@ -79,6 +79,41 @@
 				},
 			],
 		},
+		// copy to clipboard
+		{
+			"before": [
+				"g",
+				"y",
+			],
+			"after": [
+				"\"",
+				"+",
+				"Y",
+			],
+		},
+		// paste from clipboard
+		{
+			"before": [
+				"g",
+				"p",
+			],
+			"after": [
+				"\"",
+				"+",
+				"p",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"P",
+			],
+			"after": [
+				"\"",
+				"+",
+				"P",
+			],
+		},
 		// redo
 		{
 			"before": [
@@ -134,6 +169,18 @@
 				{
 					"command": "editor.action.commentLine",
 				},
+			],
+		},
+		// copy to clipboard
+		{
+			"before": [
+				"g",
+				"y",
+			],
+			"after": [
+				"\"",
+				"+",
+				"y",
 			],
 		},
 		// sort
