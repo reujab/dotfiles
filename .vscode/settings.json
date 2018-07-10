@@ -95,7 +95,7 @@
 			],
 			"commands": [
 				{
-					"command": "workbench.action.files.save",
+					"command": ":w",
 				},
 			],
 		},
