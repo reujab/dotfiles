@@ -1,4 +1,5 @@
 {
+	// editor
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.accessibilitySupport": "off",
@@ -28,23 +29,32 @@
 	"editor.suggestSelection": "first",
 	"editor.wordWrap": "on",
 	"editor.wrappingIndent": "same",
+	// workbench
 	"workbench.colorTheme": "One Dark Pro",
 	"workbench.settings.settingsSearchTocBehavior": "show",
 	"workbench.startupEditor": "none",
 	"workbench.statusBar.feedback.visible": false,
 	"workbench.tips.enabled": false,
+	// window
 	"window.menuBarVisibility": "toggle",
 	"window.openWithoutArgumentsInNewWindow": "off",
+	// files
 	"files.insertFinalNewline": true,
 	"files.maxMemoryForLargeFilesMB": 1024,
 	"files.trimTrailingWhitespace": true,
 	"files.useExperimentalFileWatcher": true,
+	// zenMode
 	"zenMode.hideStatusBar": false,
+	// explorer
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
+	// search
 	"search.smartCase": true,
+	// keyboard
 	"keyboard.dispatch": "keyCode",
+	// update
 	"update.enableWindowsBackgroundUpdates": false,
+	// scss
 	"scss.lint.compatibleVendorPrefixes": "warning",
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.float": "warning",
@@ -52,20 +62,18 @@
 	"scss.lint.importStatement": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
 	"scss.lint.zeroUnits": "warning",
+	// extensions
 	"extensions.showRecommendationsOnlyOnDemand": true,
+	// emmet
 	"emmet.triggerExpansionOnTab": true,
+	// eslint
 	"eslint.alwaysShowStatus": true,
 	"eslint.autoFixOnSave": true,
 	"eslint.run": "onSave",
-	"jake.autoDetect": "off",
-	"grunt.autoDetect": "off",
-	"vim.easymotion": true,
-	"vim.easymotionMarkerBackgroundColor": "black",
-	"vim.easymotionMarkerFontFamily": "FuraCode Nerd Font Mono",
-	"vim.easymotionMarkerHeight": 18,
-	"vim.foldfix": true,
+	// vim
 	"vim.hlsearch": true,
 	"vim.normalModeKeyBindings": [
+		// save
 		{
 			"before": [
 				"<Space>",
@@ -76,6 +84,7 @@
 				},
 			],
 		},
+		// redo
 		{
 			"before": [
 				"U",
@@ -112,8 +121,10 @@
 			],
 		},
 	],
+	// rust
 	"rust.build_on_save": true,
+	// go
 	"go.autocompleteUnimportedPackages": true,
-	"gulp.autoDetect": "off",
+	// searchRipgrep
 	"searchRipgrep.enable": true,
 }
