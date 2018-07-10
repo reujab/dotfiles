@@ -1,7 +1,15 @@
 "*":
+  "atom-beautify":
+    general:
+      muteAllErrors: true
+      showLoadingView: false
+    rust:
+      beautify_on_save: true
   "autocomplete-plus":
+    autoActivationDelay: 1000
     backspaceTriggersAutocomplete: true
     confirmCompletion: "tab"
+    maxVisibleSuggestions: 5
   "bracket-matcher":
     alwaysSkipClosingPairs: true
   "command-palette":
@@ -17,7 +25,7 @@
     projectHome: "/home/chris/reujab"
     telemetryConsent: "limited"
   editor:
-    fontFamily: "Fira Code"
+    fontFamily: "FuraCode Nerd Font Mono"
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
@@ -72,6 +80,8 @@
       theme: "one-dark"
     toggles:
       autoClose: true
+  rustfmt:
+    binPath: "/usr/bin/rustfmt"
   tabs:
     enableMruTabSwitching: false
     enableVcsColoring: true
@@ -80,3 +90,7 @@
     autoReveal: true
   "vim-mode-plus":
     useSmartcaseForSearch: true
+".rust.source":
+  editor:
+    preferredLineLength: 99
+    tabType: "soft"
