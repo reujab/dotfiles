@@ -84,10 +84,34 @@
 				"<C-r>",
 			],
 		},
+		// comment
+		{
+			"before": [
+				"<CR>",
+			],
+			"commands": [
+				{
+					"command": "editor.action.commentLine",
+				},
+			],
+		},
 	],
 	"vim.sneak": true,
 	"vim.substituteGlobalFlag": true,
 	"vim.surround": true,
+	"vim.visualModeKeyBindings": [
+		// comment
+		{
+			"before": [
+				"<CR>",
+			],
+			"commands": [
+				{
+					"command": "editor.action.commentLine",
+				},
+			],
+		},
+	],
 	"rust.build_on_save": true,
 	"go.autocompleteUnimportedPackages": true,
 	"gulp.autoDetect": "off",
