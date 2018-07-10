@@ -99,6 +99,27 @@
 				},
 			],
 		},
+		// tabs
+		{
+			"before": [
+				"-",
+			],
+			"commands": [
+				{
+					"command": ":tabp",
+				},
+			],
+		},
+		{
+			"before": [
+				"=",
+			],
+			"commands": [
+				{
+					"command": ":tabn",
+				},
+			],
+		},
 	],
 	"vim.sneak": true,
 	"vim.substituteGlobalFlag": true,
