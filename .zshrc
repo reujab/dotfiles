@@ -27,7 +27,7 @@ eval "$(silver init)"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
-alias aur="pacaur"
+alias aur="pacaur --noedit"
 alias c="tput reset"
 alias tokei="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml"
 alias dnfc="sudo dnf clean"
