@@ -68,22 +68,22 @@
 	"vim.normalModeKeyBindings": [
 		{
 			"before": [
-				"<Space>"
+				"<Space>",
 			],
 			"commands": [
 				{
-					"command": "workbench.action.files.save"
-				}
-			]
+					"command": "workbench.action.files.save",
+				},
+			],
 		},
 		{
 			"before": [
 				"U",
 			],
 			"after": [
-				"<C-r>"
-			]
-		}
+				"<C-r>",
+			],
+		},
 	],
 	"vim.sneak": true,
 	"vim.substituteGlobalFlag": true,
