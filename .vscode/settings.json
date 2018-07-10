@@ -132,7 +132,7 @@
 		// sort
 		{
 			"before": ["s"],
-			"commands": [{"command": ":sort"}],
+			"after": [":", "s", "o", "r", "t", "<CR>"],
 		},
 	],
 	// window
