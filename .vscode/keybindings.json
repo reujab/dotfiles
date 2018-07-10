@@ -1,0 +1,27 @@
+[
+	// disable MRU tab switching
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	// close tab on ctrl+q
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.closeActiveEditor",
+	},
+	// enables emacs-like keybindings in quick open
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen",
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen",
+	},
+]

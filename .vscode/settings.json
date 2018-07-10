@@ -1,0 +1,95 @@
+{
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.codeActionsOnSave": {}, // default
+	"editor.cursorBlinking": "solid",
+	"editor.find.autoFindInSelection": true,
+	"editor.fontFamily": "FuraCode Nerd Font Mono",
+	"editor.fontLigatures": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.showSlider": "always",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": true,
+		"strings": true,
+	},
+	"editor.quickSuggestionsDelay": 10, // default
+	"editor.renderControlCharacters": true,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "boundary",
+	"editor.rulers": [
+		100,
+	],
+	"editor.showFoldingControls": "always",
+	"editor.suggestSelection": "first",
+	"editor.wordWrap": "on",
+	"editor.wrappingIndent": "same",
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.settings.settingsSearchTocBehavior": "show",
+	"workbench.startupEditor": "none",
+	"workbench.statusBar.feedback.visible": false,
+	"workbench.tips.enabled": false,
+	"window.menuBarVisibility": "toggle",
+	"window.openWithoutArgumentsInNewWindow": "off",
+	"files.insertFinalNewline": true,
+	"files.maxMemoryForLargeFilesMB": 1024,
+	"files.trimTrailingWhitespace": true,
+	"files.useExperimentalFileWatcher": true,
+	"zenMode.hideStatusBar": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.openEditors.visible": 0,
+	"search.smartCase": true,
+	"keyboard.dispatch": "keyCode",
+	"update.enableWindowsBackgroundUpdates": false,
+	"scss.lint.compatibleVendorPrefixes": "warning",
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.float": "warning",
+	"scss.lint.ieHack": "warning",
+	"scss.lint.importStatement": "warning",
+	"scss.lint.unknownVendorSpecificProperties": "warning",
+	"scss.lint.zeroUnits": "warning",
+	"extensions.showRecommendationsOnlyOnDemand": true,
+	"emmet.triggerExpansionOnTab": true,
+	"eslint.alwaysShowStatus": true,
+	"eslint.autoFixOnSave": true,
+	"eslint.run": "onSave",
+	"jake.autoDetect": "off",
+	"grunt.autoDetect": "off",
+	"vim.easymotion": true,
+	"vim.easymotionMarkerBackgroundColor": "black",
+	"vim.easymotionMarkerFontFamily": "FuraCode Nerd Font Mono",
+	"vim.easymotionMarkerHeight": 18,
+	"vim.foldfix": true,
+	"vim.hlsearch": true,
+	"vim.normalModeKeyBindings": [
+		{
+			"before": [
+				"<Space>"
+			],
+			"commands": [
+				{
+					"command": "workbench.action.files.save"
+				}
+			]
+		},
+		{
+			"before": [
+				"U",
+			],
+			"after": [
+				"<C-r>"
+			]
+		}
+	],
+	"vim.sneak": true,
+	"vim.substituteGlobalFlag": true,
+	"vim.surround": true,
+	"rust.build_on_save": true,
+	"go.autocompleteUnimportedPackages": true,
+	"gulp.autoDetect": "off",
+	"searchRipgrep.enable": true,
+}
