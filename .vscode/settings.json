@@ -107,6 +107,13 @@
 			"commands": [{"command": ":tabn"}],
 		},
 	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		// reset hlsearch
+		{
+			"before": ["<Esc>"],
+			"after": ["/", "<Esc>", "<Esc>"],
+		},
+	],
 	"vim.sneak": true,
 	"vim.substituteGlobalFlag": true,
 	"vim.surround": true,
