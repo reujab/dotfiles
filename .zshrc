@@ -1,5 +1,10 @@
 source /etc/profile.d/vte.sh
 
+# change to last working directory
+if [[ $PWD = $HOME ]]; then
+	cd "$(cat /tmp/alacritty-wd)" 2> /dev/null
+fi
+
 # variables
 eval "$(go env)"
 export EDITOR=nvim
@@ -73,6 +78,12 @@ alias tokei="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml"
 alias yay="yay --sudoloop"
 
 # functions
+
+# saves last directory
+chpwd() {
+	pwd > /tmp/alacritty-wd
+}
+
 clean() {
 	setopt nullglob
 	rm "$GOPATH/"{bin,pkg} 2> /dev/null
