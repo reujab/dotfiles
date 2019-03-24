@@ -30,28 +30,40 @@
 	"editor.suggestSelection": "first",
 	"editor.wordWrap": "on",
 	"editor.wrappingIndent": "same",
+
 	// emmet
 	"emmet.triggerExpansionOnTab": true,
+
 	// eslint
 	"eslint.alwaysShowStatus": true,
 	"eslint.autoFixOnSave": true,
 	"eslint.run": "onSave",
+
 	// explorer
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
+
 	// extensions
 	"extensions.showRecommendationsOnlyOnDemand": true,
+
 	// files
 	"files.insertFinalNewline": true,
 	"files.maxMemoryForLargeFilesMB": 1024,
 	"files.trimTrailingWhitespace": true,
 	"files.useExperimentalFileWatcher": true,
+
 	// go
 	"go.autocompleteUnimportedPackages": true,
+
 	// keyboard
 	"keyboard.dispatch": "keyCode",
+
+	// material theme
+	"materialTheme.fixIconsRunning": false,
+
 	// rust
 	"rust.build_on_save": true,
+
 	// scss
 	"scss.lint.compatibleVendorPrefixes": "warning",
 	"scss.lint.duplicateProperties": "warning",
@@ -60,25 +72,37 @@
 	"scss.lint.importStatement": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
 	"scss.lint.zeroUnits": "warning",
+
 	// search
 	"search.smartCase": true,
+
 	// searchRipgrep
 	"searchRipgrep.enable": true,
+
 	// update
 	"update.enableWindowsBackgroundUpdates": false,
+
 	// vim
 	"vim.hlsearch": true,
 	"vim.normalModeKeyBindings": [
+		// change line
+		{
+			"before": ["c", "c"],
+			"after": ["<Esc>", "^", "C"],
+		},
+
 		// comment
 		{
 			"before": ["<CR>"],
 			"commands": [{"command": "editor.action.commentLine"}],
 		},
+
 		// copy to clipboard
 		{
 			"before": ["g", "y"],
 			"after": ["\"", "+", "Y"],
 		},
+
 		// paste from clipboard
 		{
 			"before": ["g", "p"],
@@ -88,16 +112,19 @@
 			"before": ["g", "P"],
 			"after": ["\"", "+", "P"],
 		},
+
 		// redo
 		{
 			"before": ["U"],
 			"after": ["<C-r>"],
 		},
+
 		// save
 		{
 			"before": ["<Space>"],
 			"commands": [{"command": ":w"}],
 		},
+
 		// tabs
 		{
 			"before": ["-"],
@@ -115,7 +142,6 @@
 			"after": ["/", "<Esc>", "<Esc>"],
 		},
 	],
-	"vim.sneak": true,
 	"vim.substituteGlobalFlag": true,
 	"vim.surround": true,
 	"vim.visualModeKeyBindings": [
@@ -124,26 +150,43 @@
 			"before": ["<CR>"],
 			"commands": [{"command": "editor.action.commentLine"}],
 		},
+
 		// copy to clipboard
 		{
 			"before": ["g", "y"],
 			"after": ["\"", "+", "y"],
 		},
+
 		// sort
 		{
 			"before": ["s"],
 			"after": [":", "s", "o", "r", "t", "<CR>"],
 		},
 	],
+
 	// window
 	"window.menuBarVisibility": "toggle",
 	"window.openWithoutArgumentsInNewWindow": "off",
+
 	// workbench
-	"workbench.colorTheme": "One Dark Pro",
+	"workbench.colorTheme": "Material Theme High Contrast",
+	"workbench.iconTheme": "eq-material-theme-icons",
 	"workbench.settings.settingsSearchTocBehavior": "show",
 	"workbench.startupEditor": "none",
 	"workbench.statusBar.feedback.visible": false,
 	"workbench.tips.enabled": false,
+
 	// zenMode
 	"zenMode.hideStatusBar": false,
+
+	// rust
+	"[rust]": {
+		"editor.detectIndentation": false,
+		"editor.insertSpaces": true,
+	},
+	"latex-workshop.message.update.show": false,
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.message.error.show": false,
+	"latex-workshop.message.warning.show": false,
+	"window.titleBarStyle": "native",
 }

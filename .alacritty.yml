@@ -10,7 +10,7 @@ window:
     x: 0
     y: 0
 
-  decorations: true
+  decorations: full
 
 tabspaces: 8
 
@@ -40,8 +40,6 @@ font:
 
 # Should display the render timer
 render_timer: false
-
-custom_cursor_colors: false
 
 # Colors (Modified One Dark)
 colors:
@@ -89,21 +87,19 @@ mouse:
   # scrolling for applications like `man`.
   #
   # To disable this completely, set `faux_scrollback_lines` to 0.
-  faux_scrollback_lines: 1024
+  faux_scrolling_lines: 1024
+
+  hide_when_typing: false
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
 dynamic_title: true
 
-hide_cursor_when_typing: false
-
-cursor_style: Block
+cursor:
+  style: Block
 
 live_config_reload: true
-
-shell:
-  program: tmux
 
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }
