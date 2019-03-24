@@ -75,7 +75,6 @@ alias ss="yay -Ss"
 alias syu="yay -Syu"
 alias toke="tokei"
 alias tokei="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml"
-alias yay="yay --sudoloop"
 
 # functions
 
