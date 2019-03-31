@@ -32,6 +32,9 @@ eval "$(silver init)"
 # zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# you should use
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+
 # aliases
 alias c="tput reset"
 alias e="$EDITOR"
