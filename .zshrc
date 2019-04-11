@@ -2,7 +2,7 @@ source /etc/profile.d/vte.sh
 
 # change to last working directory
 if [[ $PWD = $HOME ]]; then
-	cd "$(cat /tmp/alacritty-wd 2> /dev/null)" 2> /dev/null
+	cd "$(cat /tmp/.zshwd 2> /dev/null)" 2> /dev/null
 fi
 
 # variables
