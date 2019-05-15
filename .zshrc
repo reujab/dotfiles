@@ -76,8 +76,7 @@ alias rsu="yay -Rsu"
 alias s="yay -S"
 alias ss="yay -Ss"
 alias syu="yay -Syu"
-alias toke="tokei"
-alias tokei="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml"
+alias toke="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml -e target"
 
 # functions
 
