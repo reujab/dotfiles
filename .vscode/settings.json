@@ -9,6 +9,7 @@
 	"editor.formatOnSave": true,
 	"editor.insertSpaces": false,
 	"editor.minimap.showSlider": "always",
+	"editor.occurrencesHighlight": false,
 	"editor.parameterHints.enabled": false,
 	"editor.quickSuggestions": {
 		"other": true,
