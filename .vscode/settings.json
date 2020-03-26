@@ -1,70 +1,73 @@
 {
-	// editor
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.acceptSuggestionOnEnter": "off",
-	"editor.accessibilitySupport": "off",
-	"editor.codeActionsOnSave": {}, // default
 	"editor.cursorBlinking": "solid",
-	"editor.find.autoFindInSelection": true,
-	"editor.fontFamily": "FuraCode Nerd Font Mono",
-	"editor.fontLigatures": true,
+	"editor.cursorSurroundingLines": 5,
+	"editor.dragAndDrop": false,
+	"editor.fontFamily": "CodeNewRoman Nerd Font Mono",
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.insertSpaces": false,
 	"editor.minimap.showSlider": "always",
-	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.occurrencesHighlight": false,
+	"editor.parameterHints.enabled": false,
 	"editor.quickSuggestions": {
 		"other": true,
 		"comments": true,
 		"strings": true,
 	},
-	"editor.quickSuggestionsDelay": 10, // default
 	"editor.renderControlCharacters": true,
 	"editor.renderLineHighlight": "all",
 	"editor.renderWhitespace": "boundary",
 	"editor.rulers": [
-		100,
+		100
 	],
-	"editor.showFoldingControls": "always",
-	"editor.suggestSelection": "first",
 	"editor.wordWrap": "on",
-	"editor.wrappingIndent": "same",
+	"editor.wrappingIndent": "none",
 
-	// emmet
-	"emmet.triggerExpansionOnTab": true,
-
-	// eslint
-	"eslint.alwaysShowStatus": true,
-	"eslint.autoFixOnSave": true,
-	"eslint.run": "onSave",
-
-	// explorer
 	"explorer.confirmDragAndDrop": false,
 	"explorer.openEditors.visible": 0,
 
-	// extensions
-	"extensions.showRecommendationsOnlyOnDemand": true,
-
-	// files
-	"files.insertFinalNewline": true,
-	"files.maxMemoryForLargeFilesMB": 1024,
 	"files.trimTrailingWhitespace": true,
-	"files.useExperimentalFileWatcher": true,
+	"files.insertFinalNewline": true,
+	"files.watcherExclude": {
+		"**/*cache*/**": true,
+		"**/dist/**": true
+	},
 
-	// go
-	"go.autocompleteUnimportedPackages": true,
-
-	// keyboard
 	"keyboard.dispatch": "keyCode",
 
-	// material theme
-	"materialTheme.fixIconsRunning": false,
+	"search.smartCase": true,
 
-	// rust
+	"window.titleBarStyle": "native",
+	"window.menuBarVisibility": "toggle",
+
+	"workbench.colorTheme": "Material Theme High Contrast",
+	"workbench.iconTheme": "eq-material-theme-icons",
+	"workbench.startupEditor": "none",
+	"workbench.tips.enabled": false,
+
+	"zenMode.hideStatusBar": false,
+
+	"[rust]": {
+		"editor.detectIndentation": false,
+		"editor.insertSpaces": true,
+	},
+
+	// extensions
+	"eslint.format.enable": true,
+	"eslint.run": "onSave",
+
+	"go.autocompleteUnimportedPackages": true,
+
+	"latex-workshop.message.update.show": false,
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.message.error.show": false,
+	"latex-workshop.message.warning.show": false,
+
 	"rust.build_on_save": true,
 
-	// scss
+	"rust-client.channel": "nightly",
+
 	"scss.lint.compatibleVendorPrefixes": "warning",
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.float": "warning",
@@ -73,16 +76,9 @@
 	"scss.lint.unknownVendorSpecificProperties": "warning",
 	"scss.lint.zeroUnits": "warning",
 
-	// search
-	"search.smartCase": true,
+	"terminal.integrated.confirmOnExit": true,
+	"terminal.integrated.showExitAlert": false,
 
-	// searchRipgrep
-	"searchRipgrep.enable": true,
-
-	// update
-	"update.enableWindowsBackgroundUpdates": false,
-
-	// vim
 	"vim.hlsearch": true,
 	"vim.normalModeKeyBindings": [
 		// change line
@@ -163,30 +159,4 @@
 			"after": [":", "s", "o", "r", "t", "<CR>"],
 		},
 	],
-
-	// window
-	"window.menuBarVisibility": "toggle",
-	"window.openWithoutArgumentsInNewWindow": "off",
-
-	// workbench
-	"workbench.colorTheme": "Material Theme High Contrast",
-	"workbench.iconTheme": "eq-material-theme-icons",
-	"workbench.settings.settingsSearchTocBehavior": "show",
-	"workbench.startupEditor": "none",
-	"workbench.statusBar.feedback.visible": false,
-	"workbench.tips.enabled": false,
-
-	// zenMode
-	"zenMode.hideStatusBar": false,
-
-	// rust
-	"[rust]": {
-		"editor.detectIndentation": false,
-		"editor.insertSpaces": true,
-	},
-	"latex-workshop.message.update.show": false,
-	"latex-workshop.view.pdf.viewer": "tab",
-	"latex-workshop.message.error.show": false,
-	"latex-workshop.message.warning.show": false,
-	"window.titleBarStyle": "native",
 }
