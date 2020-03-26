@@ -2,7 +2,6 @@
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.cursorBlinking": "solid",
-	"editor.cursorSurroundingLines": 5,
 	"editor.dragAndDrop": false,
 	"editor.fontFamily": "CodeNewRoman Nerd Font Mono",
 	"editor.formatOnPaste": true,
