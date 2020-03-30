@@ -77,9 +77,6 @@
 	"scss.lint.unknownVendorSpecificProperties": "warning",
 	"scss.lint.zeroUnits": "warning",
 
-	"terminal.integrated.confirmOnExit": true,
-	"terminal.integrated.showExitAlert": false,
-
 	"vim.hlsearch": true,
 	"vim.normalModeKeyBindings": [
 		// change line
