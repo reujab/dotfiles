@@ -11,6 +11,7 @@ export EDITOR=nvim
 export LESSHISTFILE=$HOME/.cache/.lesshist
 export PATH=~/.local/share/bin:/bin:/sbin:/usr/local/bin:/usr/local/sbin:$GOPATH/bin:~/.cargo/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 export RUST_BACKTRACE=1
+export GOPATH
 
 # zsh
 # enables aliases with sudo
