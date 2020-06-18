@@ -11,13 +11,13 @@ call plug#begin()
 " set completeopt-=preview
 " set shortmess+=c
 
-Plug 'Shougo/deoplete.nvim'
-Plug 'ervandew/supertab'
-Plug 'zchee/deoplete-go'
-inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
-let SuperTabDefaultCompletionType = '<c-n>'
-let deoplete#enable_at_startup = 1
-set completeopt-=preview
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'ervandew/supertab'
+" Plug 'zchee/deoplete-go'
+" inoremap <expr> <cr> pumvisible() ? "\<c-y>\<cr>" : "\<cr>"
+" let SuperTabDefaultCompletionType = '<c-n>'
+" let deoplete#enable_at_startup = 1
+" set completeopt-=preview
 
 " Plug 'ervandew/supertab'
 " Plug 'maralla/completor.vim'
