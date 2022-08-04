@@ -67,8 +67,6 @@
 
 	"rust.build_on_save": true,
 
-	"rust-client.channel": "nightly",
-
 	"scss.lint.compatibleVendorPrefixes": "warning",
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.float": "warning",
@@ -157,4 +155,7 @@
 			"after": [":", "s", "o", "r", "t", "<CR>"],
 		},
 	],
+	"go.formatTool": "goimports",
+	"typescript.updateImportsOnFileMove.enabled": "never",
+	"svelte.enable-ts-plugin": true,
 }
