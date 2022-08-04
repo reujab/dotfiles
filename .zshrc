@@ -29,6 +29,7 @@ SILVER=(status:black:white dir:blue:black git:green:black cmdtime:cyan:black)
 export SILVER_SHELL=zsh
 export SILVER_DIR_LENGTH=1
 export SILVER_DIR_ALIASES=~/go/src/github.com/reujab:$'\ue627'
+export SILVER_ICONS=ascii
 source <(silver init)
 
 # zsh syntax highlighting
@@ -37,7 +38,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # aliases
 alias c="tput reset"
 alias e="$EDITOR"
-alias expo='PATH=/opt/android-sdk/emulator:$PATH expo'
 alias f="fg"
 alias g="hub"
 alias ga="g add"
@@ -68,11 +68,8 @@ alias gstd="gst drop"
 alias gstl="gst list"
 alias gstp="gst pop"
 alias gstu="gst -u"
-alias io="sudo iotop"
-alias lint="c; gometalinter --config ~/.gometalinter.json"
 alias ll="ls -lb"
 alias ls="exa -a"
-alias prename="perl-rename"
 alias rm="rm -i"
 alias rsu="yay -Rsu"
 alias s="yay -S"
@@ -82,30 +79,6 @@ alias t="gio trash"
 alias toke="tokei -e \*.json -e \*.yaml -e \*.yml -e \*.toml -e target"
 
 # functions
-
-# saves last directory
-chpwd() {
-	pwd > /tmp/alacritty-wd
-}
-
-clean() {
-	setopt nullglob
-	rm "$GOPATH/"{bin,pkg} 2> /dev/null
-	rm "$GOPATH/src/"^github.com
-	rm "$GOPATH/src/github.com/"^reujab
-	go get github.com/{alecthomas/gometalinter,reujab/{bing-background,bronze}} golang.org/x/tools/cmd/go{imports,rename}
-	unsetopt nullglob
-}
-
-unswap() {
-	sudo swapoff /dev/sda3 &&
-		sudo swapon /dev/sda3
-}
-
-run() {
-	c
-	go build && "./$(basename "$PWD")" "$@"
-}
 
 wss() {
 	windscribe status
