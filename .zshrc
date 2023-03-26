@@ -29,7 +29,6 @@ SILVER=(status:black:white dir:blue:black git:green:black cmdtime:cyan:black)
 export SILVER_SHELL=zsh
 export SILVER_DIR_LENGTH=1
 export SILVER_DIR_ALIASES=~/go/src/github.com/reujab:$'\ue627'
-export SILVER_ICONS=ascii
 source <(silver init)
 
 # zsh syntax highlighting
@@ -85,11 +84,13 @@ wss() {
 }
 
 wsc() {
-	sudo ln -sf /etc/resolv.1.1.1.1.conf /etc/resolv.conf
+	echo nameserver 1.1.1.1 | sudo tee /etc/resolv.1.1.1.1.conf > /dev/null
+	sudo ln -sfn /etc/resolv.1.1.1.1.conf /etc/resolv.conf
 	windscribe connect $1
 }
 
 wsdc() {
 	windscribe disconnect
-	sudo ln -sf /etc/resolv.1.1.1.1.conf /etc/resolv.conf
+	echo nameserver 1.1.1.1 | sudo tee /etc/resolv.1.1.1.1.conf > /dev/null
+	sudo ln -sfn /etc/resolv.1.1.1.1.conf /etc/resolv.conf
 }

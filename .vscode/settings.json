@@ -43,7 +43,6 @@
 	"window.menuBarVisibility": "toggle",
 
 	"workbench.colorTheme": "Material Theme High Contrast",
-	"workbench.iconTheme": "eq-material-theme-icons",
 	"workbench.startupEditor": "none",
 	"workbench.tips.enabled": false,
 
@@ -158,4 +157,16 @@
 	"go.formatTool": "goimports",
 	"typescript.updateImportsOnFileMove.enabled": "never",
 	"svelte.enable-ts-plugin": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"eslint.validate": [
+		"svelte"
+	],
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode-nightly"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"terminal.integrated.fontFamily": "CodeNewRoman Nerd Font Mono",
+	"workbench.iconTheme": "eq-material-theme-icons",
 }
