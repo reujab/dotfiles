@@ -2,7 +2,7 @@
 	email = reujab@gmail.com
 	name = reujab
 [credential]
-	helper = gnome-keyring
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
 [advice]
 	statusHints = false
 	pushNonFastForward = false

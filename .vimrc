@@ -2,7 +2,7 @@ if $NVIM_TUI_ENABLE_CURSOR_SHAPE
 	echo "[Warning] You are in a nested vim session."
 endif
 
-source ~/.vim/plugged/vim-plug/plug.vim
+source ~/.config/nvim/plugged/vim-plug/plug.vim
 
 call plug#begin()
 
